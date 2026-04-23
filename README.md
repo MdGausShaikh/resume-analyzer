@@ -6,7 +6,7 @@ An AI-powered Resume Analyzer that compares a candidate's resume with a job desc
 
 ## 🚀 Live Demo
 
-🔗 (https://md-resume-analyzer-8055.streamlit.app/)
+🔗 https://md-resume-analyzer-8055.streamlit.app/
 
 ---
 
