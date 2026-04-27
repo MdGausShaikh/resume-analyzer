@@ -1,141 +1,126 @@
-# 📄 AI Resume Analyzer
+# 🧠 ResumeIQ1 – AI-Powered Resume Screening & ATS Intelligence System
 
-An AI-powered Resume Analyzer that compares a candidate's resume with a job description and provides a **match score**, **missing skills**, and a **downloadable report**.
-
----
-
-## 🚀 Live Demo
-
-🔗 https://md-resume-analyzer-8055.streamlit.app/
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![AI](https://img.shields.io/badge/AI-Powered-green)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
 
 ---
 
-## 📌 Features
+## 🚀 Overview
 
-* 📄 Upload Resume (PDF / DOCX)
-* 📝 Paste Job Description
-* 📊 Match Score using NLP (TF-IDF)
-* ❌ Identify Missing Skills / Keywords
-* 📥 Download Analysis Report (CSV)
-* 🌐 Simple Web UI using Streamlit
+**ResumeIQ1** is an AI-powered recruitment intelligence system that automates resume screening, analyzes candidate profiles, and generates ATS-based rankings.
+
+It helps recruiters make faster and smarter hiring decisions using **Machine Learning + NLP + AI Chatbot assistance**.
 
 ---
 
-## 🧠 How It Works
+## 🎯 Key Features
 
-1. Extracts text from resume (PDF/DOCX)
-2. Cleans and preprocesses text
-3. Converts text into numerical vectors using TF-IDF
-4. Calculates similarity score using cosine similarity
-5. Displays:
+### 📄 Resume Processing
+- Upload multiple resumes (PDF / DOCX)
+- Automatic text extraction
+- Data cleaning and preprocessing
 
-   * Match Percentage
-   * Missing Skills
+### 🧠 ATS Scoring Engine
+- TF-IDF + Cosine Similarity model
+- Weighted scoring based on:
+  - Skills match
+  - Experience
+  - Certifications
+  - Projects
+
+### 🧩 Skill Intelligence System
+- 60+ technical & soft skills database
+- Detects:
+  - Matched skills
+  - Missing skills
+- Job description comparison
+
+### 👤 Candidate Profiling
+Automatically extracts:
+- Name
+- Email
+- Phone
+- Experience
+- Education
+- Certifications
+- Projects
+- LinkedIn / GitHub presence
+
+### 🏆 Ranking System
+- Automated candidate ranking
+- Hiring decisions:
+  - 🟢 Strong Hire
+  - 🟡 Interview Recommended
+  - 🟠 Backup Candidate
+  - 🔴 Low Priority
+
+### 📊 Analytics Dashboard
+- Recruiter KPI insights
+- Candidate score visualization
+- Interactive Plotly charts
+
+### 🤖 AI Career Coach
+- Powered by Groq LLM (Llama 3)
+- Resume improvement suggestions
+- Interview preparation guidance
+- Career roadmap recommendations
+
+### 📚 History Tracking
+- Stores past screening results using SQLite
+- Last 20 evaluations available
+
+### 📑 PDF Report Generation
+- Professional recruiter-ready reports
+- Candidate-wise analysis
+- Skill gap insights
+
+---
+
+## 🏗️ System Architecture
+Resume Upload
+↓
+Text Extraction (PDF / DOCX)
+↓
+Data Cleaning & Preprocessing
+↓
+Skill Matching Engine
+↓
+TF-IDF + Cosine Similarity
+↓
+Weighted ATS Scoring
+↓
+Candidate Ranking
+↓
+Dashboard + PDF Report
+
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Language:** Python
-* **Libraries:**
-
-  * pandas
-  * scikit-learn
-  * PyPDF2
-  * python-docx
-  * nltk / spaCy
-  * streamlit
+| Layer | Technology |
+|------|------------|
+| Frontend | Streamlit |
+| Backend | Python |
+| ML/NLP | Scikit-learn, TF-IDF |
+| Data Handling | Pandas |
+| Visualization | Plotly |
+| Database | SQLite |
+| File Parsing | PyPDF2, python-docx |
+| Reporting | ReportLab |
+| AI Chatbot | Groq LLM |
 
 ---
 
 ## 📂 Project Structure
-
-```
-resume-analyzer/
-│── app.py
-│── utils.py
-│── requirements.txt
-│── README.md
-```
-
----
-
-## ⚙️ Installation & Setup
-
-### 1. Clone Repository
-
-```
-git clone https://github.com/your-username/resume-analyzer.git
-cd resume-analyzer
-```
-
-### 2. Create Virtual Environment
-
-```
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### 4. Run Application
-
-```
-python -m streamlit run app.py
-```
-
----
-
-## 📊 Example Output
-
-* ✅ Match Score: 82% (Strong Match)
-* ⚠️ Missing Skills: Docker, Kubernetes, AWS
-
----
-
-## 🔥 Advantages
-
-* 100% Free & Open Source
-* Real-world AI use case
-* Easy to use interface
-* Helps improve resume quality
-
----
-
-## ⚠️ Limitations
-
-* Based on keyword matching (TF-IDF)
-* Limited contextual understanding
-* Accuracy can be improved with advanced AI models
-
----
-
-## 🚀 Future Enhancements
-
-* AI-based resume suggestions
-* Skill gap analysis
-* Integration with job portals
-* Advanced NLP using Transformers
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork this repo and improve it.
-
----
-
-## 📧 Contact
-
-For any queries or collaboration:
-📩 [your-email@example.com](mailto:your-email@example.com)
-
----
-
-## ⭐ Acknowledgment
-
-If you like this project, give it a ⭐ on GitHub!
+ResumeIQ1/
+│
+├── app.py # Main Streamlit app
+├── auth.py # Login system
+├── utils.py # ATS engine & ML logic
+├── chatbot.py # AI Career Coach
+├── requirements.txt # Dependencies
+├── history.db # SQLite database
+└── README.md # Documentation
