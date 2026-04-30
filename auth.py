@@ -112,7 +112,7 @@ def login():
             🤖 AI Career Coach<br>
             📊 Recruiter Analytics<br>
             📥 PDF Reports<br><br>
-            Demo Credentials: <b>admin / 1234</b>
+            </b>
             </div>
             """, unsafe_allow_html=True)
 
